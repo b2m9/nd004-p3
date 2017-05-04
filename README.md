@@ -20,8 +20,8 @@ Thanks to Udacity for providing the foundation of the [Vagrantfile used in this 
 
 ## How
 
-- `vagrant up` to create the VM and initialise the database
-    - [Vagrant will load the SQL dump into PostgreSQL](blob/master/Vagrantfile#L28)
-    - [Vagrant will create the materialised views](blob/master/Vagrantfile#L29)
+- `vagrant up` to create the VM and initialise the database:
+    - [Vagrant will load the SQL dump into PostgreSQL](Vagrantfile#L28)
+    - [Vagrant will create the materialised views](Vagrantfile#L29)
 - `vagrant ssh` into the VM
 - Run `python3 /vagrant/src/report.py` to view the report
