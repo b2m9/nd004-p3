@@ -19,6 +19,7 @@ command line.
     - Which days have a higher error than 1%?
 - Reporting script in `src/report.py`
 - Queries in `src/queries.py`
+- Example report in `report.txt`
 - Materialised views in `data/views.sql`
     - Cronjobs can update materialised views in regular intervals
     - Views not appropriate since tables do not have to be updated
