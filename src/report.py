@@ -9,7 +9,7 @@ def print_two_col_report(cursor: "Cursor to open DB", query: str="",
                          title: str="", unit: str="") -> None:
     """Print report with 2 columns of given `query`. Not suitable for results
     with more than 2 columns!
-    
+
     Keyword arguments:
     cursor -- DB cursor object to open DB
     query -- SQL query as str
