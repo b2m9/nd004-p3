@@ -18,7 +18,7 @@ create materialized view visits_per_article as
 
 create materialized view status_per_day_in_july as
     select date_trunc('day', time) as day,
-            count(*) filter (where status = '200 OK') as status_ok,
-            count(*) filter (where status != '200 OK') as status_not_ok
-                from log
-                    group by day;
+        count(*) filter (where status = '200 OK') as status_ok,
+        count(*) filter (where status != '200 OK') as status_not_ok
+            from log
+                group by day;
