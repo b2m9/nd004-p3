@@ -2,11 +2,12 @@
 
 This repo is part of Udacity's nd004 course.
 
-CLI report script to analyse a 
+CLI report script to analyse an SQL dump and print a simple report on the
+command line.
 
 ## Kudos
 
-Thanks to Udacity for providing the foundation of the [Vagrantfile used in this repo](https://github.com/udacity/fullstack-nanodegree-vm).
+- Udacity for providing the foundation of the [Vagrantfile used in this repo](https://github.com/udacity/fullstack-nanodegree-vm).
 
 ## What
 
