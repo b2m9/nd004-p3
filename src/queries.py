@@ -16,6 +16,7 @@ TOP_AUTHORS = """
             group by authors.name
             order by total desc;
 """
+
 # ## QUERY FOR THIRD QUESTION
 # Select all dates with an error rate of more than 1%
 # Less readable query but no post-processing needed
