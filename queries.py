@@ -10,7 +10,7 @@ select articles.title, count(*) as visits
 """
 
 """
-2.) Who are the most popular authors of all time
+2.) Who are the most popular authors of all time?
 
 select authors.name, sum(subq.visits) as total
     from authors, 
@@ -22,4 +22,16 @@ select authors.name, sum(subq.visits) as total
     where authors.id = subq.author
     group by authors.name
     order by total desc;
+"""
+
+"""
+3.) On which days did more than 1% of requests lead to errors?
+
+select subq.t, ok, not_ok
+    from (select to_char(time, 'YYYY-MM-DD') as t,
+        count(*) filter (where status = '200 OK') as ok,
+        count(*) filter (where status != '200 OK') as not_ok
+            from log
+                group by t) as subq
+    where ok * 0.01 <= not_ok;
 """
