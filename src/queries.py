@@ -21,7 +21,7 @@ TOP_AUTHORS = """
 # Select all dates with an error rate of more than 1%
 # Less readable query but no post-processing needed
 ERROR_DATES = """
-select date, trunc(ratio::NUMERIC * 100, 2) from
+select date, trunc(ratio::numeric * 100, 2) from
     (select to_char(day, 'DD Mon YYYY') as date,
         (status_not_ok::float / status_ok::float) as ratio
             from status_per_day_in_july) as sub
