@@ -25,7 +25,8 @@ Vagrant.configure("2") do |config|
     su postgres -c 'createuser -dRS ubuntu'
     su ubuntu -c 'createdb'
     su ubuntu -c 'createdb news'
-    su ubuntu -c 'psql -d news -f /vagrant/newsdata.sql'
+    su ubuntu -c 'psql -d news -f /vagrant/data/newsdata.sql'
+    su ubuntu -c 'psql -d news -f /vagrant/data/views.sql'
 
     vagrantTip="[35m[1mThe shared directory is located at /vagrant\\nTo access your shared files: cd /vagrant[m"
     echo -e $vagrantTip > /etc/motd
