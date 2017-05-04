@@ -1,5 +1,7 @@
 # Udacity: Log analysis
 
+**Advise: This repo contains a 129 MB large SQL dump!**
+
 This repo is part of Udacity's nd004 course.
 
 CLI report script to analyse an SQL dump and print a simple report on the
@@ -18,6 +20,9 @@ command line.
 - Reporting script in `src/report.py`
 - Queries in `src/queries.py`
 - Materialised views in `data/views.sql`
+    - Cronjobs can update materialised views in regular intervals
+    - Views not appropriate since tables do not have to be updated
+    instantaneously all the time
 
 ## How
 
