@@ -4,3 +4,4 @@ ENV/
 env/
 venv/
 __pycache__/
+*.log
